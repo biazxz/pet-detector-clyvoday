@@ -47,10 +47,6 @@ void enviarDados() {
  
      Blynk.virtualWrite(V2, contadorVisitas);
  
-     Blynk.logEvent("pet_detectado",
-       "🐾 Houve um movimento perto do sensor! Visita número "
-       + String(contadorVisitas) + " do seu pet hoje.");
- 
      Serial.print("Nova visita! Total hoje: ");
      Serial.println(contadorVisitas);
    }
